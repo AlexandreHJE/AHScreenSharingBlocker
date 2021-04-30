@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '12.0'
+
+target 'BlockScreenShotDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for BlockScreenShotDemo
+  pod 'Alamofire', '~> 5.2'
+  pod "GCDWebServer", "~> 3.0"
+
+  target 'BlockScreenShotDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'BlockScreenShotDemoUITests' do
+    # Pods for testing
+  end
+
+end
