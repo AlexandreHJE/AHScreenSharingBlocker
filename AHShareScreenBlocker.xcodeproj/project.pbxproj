@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7AA2B10F47D5B550EF8DD753 /* Pods_AHShareScreenBlockerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B043DAA21016FF1B93DC1FCC /* Pods_AHShareScreenBlockerTests.framework */; };
+		99019272855BE4D16C525941 /* Pods_AHShareScreenBlocker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37839352F5114E8C2671364E /* Pods_AHShareScreenBlocker.framework */; };
+		A23988BD265CDB2F00B4CA7E /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23988BC265CDB2F00B4CA7E /* VideoPlayer.swift */; };
+		A23988C0265CE42B00B4CA7E /* text.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A23988BE265CDB5800B4CA7E /* text.mp4 */; };
+		A24F39E8263BC50A004BE515 /* ScreenRecordingDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24F39E7263BC50A004BE515 /* ScreenRecordingDetector.swift */; };
+		A2B04B8B263BC3C7008BB7CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B04B8A263BC3C7008BB7CE /* AppDelegate.swift */; };
+		A2B04B8D263BC3C7008BB7CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B04B8C263BC3C7008BB7CE /* SceneDelegate.swift */; };
+		A2B04B8F263BC3C7008BB7CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B04B8E263BC3C7008BB7CE /* ViewController.swift */; };
+		A2B04B92263BC3C7008BB7CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B04B90263BC3C7008BB7CE /* Main.storyboard */; };
+		A2B04B94263BC3C8008BB7CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B04B93263BC3C8008BB7CE /* Assets.xcassets */; };
+		A2B04B97263BC3C8008BB7CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B04B95263BC3C8008BB7CE /* LaunchScreen.storyboard */; };
+		A2B04BA2263BC3C9008BB7CE /* AHShareScreenBlockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B04BA1263BC3C9008BB7CE /* AHShareScreenBlockerTests.swift */; };
+		A2B04BAD263BC3C9008BB7CE /* AHShareScreenBlockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B04BAC263BC3C9008BB7CE /* AHShareScreenBlockerUITests.swift */; };
+		C0F0815C22E13A2E6636454F /* Pods_AHShareScreenBlocker_AHShareScreenBlockerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0D4D7CB2706568AB2962D4 /* Pods_AHShareScreenBlocker_AHShareScreenBlockerUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2B04B9E263BC3C9008BB7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2B04B7F263BC3C7008BB7CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2B04B86263BC3C7008BB7CE;
+			remoteInfo = AHShareScreenBlocker;
+		};
+		A2B04BA9263BC3C9008BB7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2B04B7F263BC3C7008BB7CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2B04B86263BC3C7008BB7CE;
+			remoteInfo = AHShareScreenBlocker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37839352F5114E8C2671364E /* Pods_AHShareScreenBlocker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHShareScreenBlocker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C99CE712AFEDE67BA3BDF55 /* Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests.debug.xcconfig"; path = "Target Support Files/Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests/Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D4E7F9B9C215550E354A695 /* Pods-AHShareScreenBlockerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHShareScreenBlockerTests.debug.xcconfig"; path = "Target Support Files/Pods-AHShareScreenBlockerTests/Pods-AHShareScreenBlockerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		77F03BD3F6891BAC27888A7B /* Pods-AHShareScreenBlockerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHShareScreenBlockerTests.release.xcconfig"; path = "Target Support Files/Pods-AHShareScreenBlockerTests/Pods-AHShareScreenBlockerTests.release.xcconfig"; sourceTree = "<group>"; };
+		A23988BC265CDB2F00B4CA7E /* VideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		A23988BE265CDB5800B4CA7E /* text.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = text.mp4; sourceTree = "<group>"; };
+		A24F39E7263BC50A004BE515 /* ScreenRecordingDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenRecordingDetector.swift; sourceTree = "<group>"; };
+		A2B04B87263BC3C7008BB7CE /* AHShareScreenBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AHShareScreenBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2B04B8A263BC3C7008BB7CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2B04B8C263BC3C7008BB7CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A2B04B8E263BC3C7008BB7CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2B04B91263BC3C7008BB7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2B04B93263BC3C8008BB7CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2B04B96263BC3C8008BB7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2B04B98263BC3C8008BB7CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2B04B9D263BC3C9008BB7CE /* AHShareScreenBlockerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHShareScreenBlockerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2B04BA1263BC3C9008BB7CE /* AHShareScreenBlockerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHShareScreenBlockerTests.swift; sourceTree = "<group>"; };
+		A2B04BA3263BC3C9008BB7CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2B04BA8263BC3C9008BB7CE /* AHShareScreenBlockerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHShareScreenBlockerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2B04BAC263BC3C9008BB7CE /* AHShareScreenBlockerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHShareScreenBlockerUITests.swift; sourceTree = "<group>"; };
+		A2B04BAE263BC3C9008BB7CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B043DAA21016FF1B93DC1FCC /* Pods_AHShareScreenBlockerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHShareScreenBlockerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0D4D7CB2706568AB2962D4 /* Pods_AHShareScreenBlocker_AHShareScreenBlockerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHShareScreenBlocker_AHShareScreenBlockerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA98B59724566C6B8B887D61 /* Pods-AHShareScreenBlocker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHShareScreenBlocker.debug.xcconfig"; path = "Target Support Files/Pods-AHShareScreenBlocker/Pods-AHShareScreenBlocker.debug.xcconfig"; sourceTree = "<group>"; };
+		DD37D4215DD1D63D4F604C57 /* Pods-AHShareScreenBlocker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHShareScreenBlocker.release.xcconfig"; path = "Target Support Files/Pods-AHShareScreenBlocker/Pods-AHShareScreenBlocker.release.xcconfig"; sourceTree = "<group>"; };
+		EC20C5E0AD90BFB073E5825F /* Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests.release.xcconfig"; path = "Target Support Files/Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests/Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2B04B84263BC3C7008BB7CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99019272855BE4D16C525941 /* Pods_AHShareScreenBlocker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2B04B9A263BC3C9008BB7CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA2B10F47D5B550EF8DD753 /* Pods_AHShareScreenBlockerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2B04BA5263BC3C9008BB7CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F0815C22E13A2E6636454F /* Pods_AHShareScreenBlocker_AHShareScreenBlockerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16E557B9110899A5D005CD28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA98B59724566C6B8B887D61 /* Pods-AHShareScreenBlocker.debug.xcconfig */,
+				DD37D4215DD1D63D4F604C57 /* Pods-AHShareScreenBlocker.release.xcconfig */,
+				4C99CE712AFEDE67BA3BDF55 /* Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests.debug.xcconfig */,
+				EC20C5E0AD90BFB073E5825F /* Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests.release.xcconfig */,
+				6D4E7F9B9C215550E354A695 /* Pods-AHShareScreenBlockerTests.debug.xcconfig */,
+				77F03BD3F6891BAC27888A7B /* Pods-AHShareScreenBlockerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		99D0B26654696F6E8E31A12E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37839352F5114E8C2671364E /* Pods_AHShareScreenBlocker.framework */,
+				BA0D4D7CB2706568AB2962D4 /* Pods_AHShareScreenBlocker_AHShareScreenBlockerUITests.framework */,
+				B043DAA21016FF1B93DC1FCC /* Pods_AHShareScreenBlockerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A24F39E6263BC50A004BE515 /* ScreenRecordingDetector */ = {
+			isa = PBXGroup;
+			children = (
+				A24F39E7263BC50A004BE515 /* ScreenRecordingDetector.swift */,
+			);
+			path = ScreenRecordingDetector;
+			sourceTree = "<group>";
+		};
+		A2B04B7E263BC3C7008BB7CE = {
+			isa = PBXGroup;
+			children = (
+				A2B04B89263BC3C7008BB7CE /* AHShareScreenBlocker */,
+				A2B04BA0263BC3C9008BB7CE /* AHShareScreenBlockerTests */,
+				A2B04BAB263BC3C9008BB7CE /* AHShareScreenBlockerUITests */,
+				A2B04B88263BC3C7008BB7CE /* Products */,
+				16E557B9110899A5D005CD28 /* Pods */,
+				99D0B26654696F6E8E31A12E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A2B04B88263BC3C7008BB7CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2B04B87263BC3C7008BB7CE /* AHShareScreenBlocker.app */,
+				A2B04B9D263BC3C9008BB7CE /* AHShareScreenBlockerTests.xctest */,
+				A2B04BA8263BC3C9008BB7CE /* AHShareScreenBlockerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2B04B89263BC3C7008BB7CE /* AHShareScreenBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				A23988BC265CDB2F00B4CA7E /* VideoPlayer.swift */,
+				A23988BE265CDB5800B4CA7E /* text.mp4 */,
+				A2B04B8A263BC3C7008BB7CE /* AppDelegate.swift */,
+				A24F39E6263BC50A004BE515 /* ScreenRecordingDetector */,
+				A2B04B8C263BC3C7008BB7CE /* SceneDelegate.swift */,
+				A2B04B8E263BC3C7008BB7CE /* ViewController.swift */,
+				A2B04B90263BC3C7008BB7CE /* Main.storyboard */,
+				A2B04B93263BC3C8008BB7CE /* Assets.xcassets */,
+				A2B04B95263BC3C8008BB7CE /* LaunchScreen.storyboard */,
+				A2B04B98263BC3C8008BB7CE /* Info.plist */,
+			);
+			path = AHShareScreenBlocker;
+			sourceTree = "<group>";
+		};
+		A2B04BA0263BC3C9008BB7CE /* AHShareScreenBlockerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2B04BA1263BC3C9008BB7CE /* AHShareScreenBlockerTests.swift */,
+				A2B04BA3263BC3C9008BB7CE /* Info.plist */,
+			);
+			path = AHShareScreenBlockerTests;
+			sourceTree = "<group>";
+		};
+		A2B04BAB263BC3C9008BB7CE /* AHShareScreenBlockerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A2B04BAC263BC3C9008BB7CE /* AHShareScreenBlockerUITests.swift */,
+				A2B04BAE263BC3C9008BB7CE /* Info.plist */,
+			);
+			path = AHShareScreenBlockerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2B04B86263BC3C7008BB7CE /* AHShareScreenBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2B04BB1263BC3C9008BB7CE /* Build configuration list for PBXNativeTarget "AHShareScreenBlocker" */;
+			buildPhases = (
+				8235AEA53C30728F6D14AFD3 /* [CP] Check Pods Manifest.lock */,
+				A2B04B83263BC3C7008BB7CE /* Sources */,
+				A2B04B84263BC3C7008BB7CE /* Frameworks */,
+				A2B04B85263BC3C7008BB7CE /* Resources */,
+				04E4486EDAC27EC36B06B4B9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AHShareScreenBlocker;
+			productName = AHShareScreenBlocker;
+			productReference = A2B04B87263BC3C7008BB7CE /* AHShareScreenBlocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2B04B9C263BC3C9008BB7CE /* AHShareScreenBlockerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2B04BB4263BC3C9008BB7CE /* Build configuration list for PBXNativeTarget "AHShareScreenBlockerTests" */;
+			buildPhases = (
+				0766613BA377467D8EC7E871 /* [CP] Check Pods Manifest.lock */,
+				A2B04B99263BC3C9008BB7CE /* Sources */,
+				A2B04B9A263BC3C9008BB7CE /* Frameworks */,
+				A2B04B9B263BC3C9008BB7CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2B04B9F263BC3C9008BB7CE /* PBXTargetDependency */,
+			);
+			name = AHShareScreenBlockerTests;
+			productName = AHShareScreenBlockerTests;
+			productReference = A2B04B9D263BC3C9008BB7CE /* AHShareScreenBlockerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A2B04BA7263BC3C9008BB7CE /* AHShareScreenBlockerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2B04BB7263BC3C9008BB7CE /* Build configuration list for PBXNativeTarget "AHShareScreenBlockerUITests" */;
+			buildPhases = (
+				064D78839D6EE641549B5A1E /* [CP] Check Pods Manifest.lock */,
+				A2B04BA4263BC3C9008BB7CE /* Sources */,
+				A2B04BA5263BC3C9008BB7CE /* Frameworks */,
+				A2B04BA6263BC3C9008BB7CE /* Resources */,
+				2881704BDB7AC6364B6B8EBF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2B04BAA263BC3C9008BB7CE /* PBXTargetDependency */,
+			);
+			name = AHShareScreenBlockerUITests;
+			productName = AHShareScreenBlockerUITests;
+			productReference = A2B04BA8263BC3C9008BB7CE /* AHShareScreenBlockerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2B04B7F263BC3C7008BB7CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					A2B04B86263BC3C7008BB7CE = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A2B04B9C263BC3C9008BB7CE = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A2B04B86263BC3C7008BB7CE;
+					};
+					A2B04BA7263BC3C9008BB7CE = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A2B04B86263BC3C7008BB7CE;
+					};
+				};
+			};
+			buildConfigurationList = A2B04B82263BC3C7008BB7CE /* Build configuration list for PBXProject "AHShareScreenBlocker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2B04B7E263BC3C7008BB7CE;
+			productRefGroup = A2B04B88263BC3C7008BB7CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2B04B86263BC3C7008BB7CE /* AHShareScreenBlocker */,
+				A2B04B9C263BC3C9008BB7CE /* AHShareScreenBlockerTests */,
+				A2B04BA7263BC3C9008BB7CE /* AHShareScreenBlockerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2B04B85263BC3C7008BB7CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23988C0265CE42B00B4CA7E /* text.mp4 in Resources */,
+				A2B04B97263BC3C8008BB7CE /* LaunchScreen.storyboard in Resources */,
+				A2B04B94263BC3C8008BB7CE /* Assets.xcassets in Resources */,
+				A2B04B92263BC3C7008BB7CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2B04B9B263BC3C9008BB7CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2B04BA6263BC3C9008BB7CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04E4486EDAC27EC36B06B4B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AHShareScreenBlocker/Pods-AHShareScreenBlocker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AHShareScreenBlocker/Pods-AHShareScreenBlocker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AHShareScreenBlocker/Pods-AHShareScreenBlocker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		064D78839D6EE641549B5A1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0766613BA377467D8EC7E871 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AHShareScreenBlockerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2881704BDB7AC6364B6B8EBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests/Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests/Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests/Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8235AEA53C30728F6D14AFD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AHShareScreenBlocker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2B04B83263BC3C7008BB7CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B04B8F263BC3C7008BB7CE /* ViewController.swift in Sources */,
+				A23988BD265CDB2F00B4CA7E /* VideoPlayer.swift in Sources */,
+				A2B04B8B263BC3C7008BB7CE /* AppDelegate.swift in Sources */,
+				A2B04B8D263BC3C7008BB7CE /* SceneDelegate.swift in Sources */,
+				A24F39E8263BC50A004BE515 /* ScreenRecordingDetector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2B04B99263BC3C9008BB7CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B04BA2263BC3C9008BB7CE /* AHShareScreenBlockerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2B04BA4263BC3C9008BB7CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B04BAD263BC3C9008BB7CE /* AHShareScreenBlockerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2B04B9F263BC3C9008BB7CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2B04B86263BC3C7008BB7CE /* AHShareScreenBlocker */;
+			targetProxy = A2B04B9E263BC3C9008BB7CE /* PBXContainerItemProxy */;
+		};
+		A2B04BAA263BC3C9008BB7CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2B04B86263BC3C7008BB7CE /* AHShareScreenBlocker */;
+			targetProxy = A2B04BA9263BC3C9008BB7CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A2B04B90263BC3C7008BB7CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2B04B91263BC3C7008BB7CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2B04B95263BC3C8008BB7CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2B04B96263BC3C8008BB7CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2B04BAF263BC3C9008BB7CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2B04BB0263BC3C9008BB7CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2B04BB2263BC3C9008BB7CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA98B59724566C6B8B887D61 /* Pods-AHShareScreenBlocker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5F69NZBZU;
+				INFOPLIST_FILE = AHShareScreenBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AlexHJE.AHShareScreenBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2B04BB3263BC3C9008BB7CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD37D4215DD1D63D4F604C57 /* Pods-AHShareScreenBlocker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5F69NZBZU;
+				INFOPLIST_FILE = AHShareScreenBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AlexHJE.AHShareScreenBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A2B04BB5263BC3C9008BB7CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D4E7F9B9C215550E354A695 /* Pods-AHShareScreenBlockerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5F69NZBZU;
+				INFOPLIST_FILE = AHShareScreenBlockerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AlexHJE.AHShareScreenBlockerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AHShareScreenBlocker.app/AHShareScreenBlocker";
+			};
+			name = Debug;
+		};
+		A2B04BB6263BC3C9008BB7CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77F03BD3F6891BAC27888A7B /* Pods-AHShareScreenBlockerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5F69NZBZU;
+				INFOPLIST_FILE = AHShareScreenBlockerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AlexHJE.AHShareScreenBlockerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AHShareScreenBlocker.app/AHShareScreenBlocker";
+			};
+			name = Release;
+		};
+		A2B04BB8263BC3C9008BB7CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C99CE712AFEDE67BA3BDF55 /* Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5F69NZBZU;
+				INFOPLIST_FILE = AHShareScreenBlockerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AlexHJE.AHShareScreenBlockerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AHShareScreenBlocker;
+			};
+			name = Debug;
+		};
+		A2B04BB9263BC3C9008BB7CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC20C5E0AD90BFB073E5825F /* Pods-AHShareScreenBlocker-AHShareScreenBlockerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5F69NZBZU;
+				INFOPLIST_FILE = AHShareScreenBlockerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AlexHJE.AHShareScreenBlockerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AHShareScreenBlocker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2B04B82263BC3C7008BB7CE /* Build configuration list for PBXProject "AHShareScreenBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2B04BAF263BC3C9008BB7CE /* Debug */,
+				A2B04BB0263BC3C9008BB7CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2B04BB1263BC3C9008BB7CE /* Build configuration list for PBXNativeTarget "AHShareScreenBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2B04BB2263BC3C9008BB7CE /* Debug */,
+				A2B04BB3263BC3C9008BB7CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2B04BB4263BC3C9008BB7CE /* Build configuration list for PBXNativeTarget "AHShareScreenBlockerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2B04BB5263BC3C9008BB7CE /* Debug */,
+				A2B04BB6263BC3C9008BB7CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2B04BB7263BC3C9008BB7CE /* Build configuration list for PBXNativeTarget "AHShareScreenBlockerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2B04BB8263BC3C9008BB7CE /* Debug */,
+				A2B04BB9263BC3C9008BB7CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2B04B7F263BC3C7008BB7CE /* Project object */;
+}
